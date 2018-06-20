@@ -1,0 +1,222 @@
+h1{
+	text-align: center;
+	font-family: 'Audiowide', cursive;
+	color: white;
+}
+
+h3{
+	color: yellow;
+	text-align: center;
+}
+h4{
+	position: absolute;
+	color: red;
+}
+
+.robots {
+	margin-top: 40px;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #5f93e8;
+}
+
+.head { 
+	width: 200px; 
+	margin-left: 995px; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+	margin-left: 950px;
+} 
+
+.left_arm, .right_arm { 
+	width: 45px; 
+	height: 170px;
+	border-radius: 100px; 
+} 
+
+.left_arm{
+	transform-origin: top;
+	animation: spin-arms 2.2s linear 1s infinite;
+}
+.right_arm{
+	transform-origin: top;
+	animation: spin-arms 2.2s linear infinite;
+}
+@keyframes spin-arms{
+	50%{ transform:rotate(70deg);}
+}
+
+.left_arm { 
+	position: relative;
+	background-color: #5e75e8;
+	left: 120px;
+	transform-origin: top;
+	transform: rotate(-50deg);
+} 
+
+.right_arm { 
+	position: relative;
+	background-color: #5e75e8;
+	right: 100px; 
+	transform-origin: top;
+	transform: rotate(-50deg);
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	position: relative;
+}
+
+.lower_body { 
+	width: 230px; 
+	height: 200px;
+	margin-left: 950px;
+	display: flex;
+} 
+
+.left_leg { 
+	margin-left: 110px; 
+	transform: translateX(9px);
+} 
+.right_leg{
+	margin-left: 0 auto;
+	transform: translateX(-9px);
+}
+.left_leg, .right_leg { 
+	width: 45px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+	position: relative;
+	top: 30px;
+} 
+.left_leg{
+	transform-origin: top;
+	animation: spin-legs 1s linear infinite;
+}
+.right_leg{
+	transform-origin: top;
+	animation: spin-legs 1s linear 0.5s infinite;
+}
+@keyframes spin-legs{
+	25%{ transform:rotate(30deg);}
+	50%{ transform:rotate(0deg);}
+	75%{ transform:rotate(-8deg);}
+	100%{ transform:rotate(0deg);}
+}
+
+.left_eye{ 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 170px; 
+} 
+
+body{
+	background-image: url("moon.jpg");
+	background-size: cover;
+}
+
+.band-head{
+	position: relative;
+	width: 200px;
+	height: 10px;
+	background-color: white;
+	top: 70px;
+}
+.band-hands{
+	position: relative;
+	width: 40px;
+	height: 10px;
+	background-color: white;
+	top: 107px;
+}
+
+.back-lights{
+  	background: gray;
+  	border-radius: 5px;
+   	display: inline-block;
+  	height: 60px;
+  	width: 60px;
+}
+
+.front-lights{
+	width: 30px; 
+	height: 100px;
+	display: inline-block;
+	border-radius: 100px 10px 10px 100px; 
+	background-color: grey;
+	transform: translateY(19%);
+}
+
+.android{
+	position: relative;
+	animation: moves 6s linear 2s infinite alternate;
+}
+@keyframes moves{
+	0%{left: 0px;}
+    100%{left: -980px}
+}
+
+.block{
+	display: inline-block;
+	margin: 0 auto;
+	transform: rotate(27deg);
+}
+.block{
+	animation: spin 4.5s linear 2s infinite;
+}
+
+@keyframes spin{
+	50% {transform: rotate(148deg);}
+}
+.light-setup{
+	display: flex;
+}
+
+.beams{
+	position: absolute;
+	height: 550px;
+    width: 550px;
+    border-radius: 500px;
+    transform: translate(130px,-56%);
+    animation: disko 3.5s infinite;
+}
+@keyframes disko{
+	0%   {background: linear-gradient(to bottom right, rgba(255,0,0,0.3) 0%, rgba(0,0,0,0) 85%);}
+    25%  {background: linear-gradient(to bottom right, rgba(0,255,0,0.3), rgba(0,0,0,0));}
+    50%  {background: linear-gradient(to bottom right, rgba(0,0,255,0.3), rgba(0,0,0,0));}
+    75%  {background: linear-gradient(to bottom right, rgba(255,255,0,0.3), rgba(0,0,0,0));}
+    100% {background: linear-gradient(to bottom right, rgba(255,255,255,0.3), rgba(0,0,0,0));}
+}
+
+a{
+	text-decoration: none;
+}
+audio{
+	position: absolute;
+}
