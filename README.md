@@ -1,2 +1,2 @@
 
-Click the link at the side to see how the site looks :
+Click the link at the side :point_up: to see the site :raised_hands:
